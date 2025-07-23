@@ -1,34 +1,65 @@
-using System;
+using System; 
 
-namespace Activity1
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            string firstName = "";
-            string lastName = "";
-            while (true)
-            {
-                Console.Write("Enter your first name: ");
-                firstName = Console.ReadLine();
+using System.Collections.Generic; 
 
-                if (!string.IsNullOrWhiteSpace(firstName))
-                    break;
+using System.Linq; 
 
-                Console.WriteLine("First name cannot be empty. Please try again.");
-            }
-            while (true)
-            {
-                Console.Write("Enter your last name: ");
-                lastName = Console.ReadLine();
+using System.Text; 
 
-                if (!string.IsNullOrWhiteSpace(lastName))
-                    break;
+using System.Threading.Tasks;  
 
-                Console.WriteLine("Last name cannot be empty. Please try again.");
-            }
-            Console.WriteLine($"Your full name is: {firstName} {lastName}");
-        }
-    }
-}
+namespace Ass1act1 
+
+{ 
+
+    internal class Program 
+
+    { 
+
+        static void Main(string[] args) 
+
+        { 
+
+            string FirstName; 
+
+            string LastName; 
+
+  
+
+            Console.Write("Enter your FirstName: "); 
+
+            FirstName = Console.ReadLine(); 
+
+  
+
+            Console.Write("Enter your LastName: "); 
+
+            LastName = Console.ReadLine(); 
+
+  
+
+            if (string.IsNullOrWhiteSpace(FirstName) || string.IsNullOrWhiteSpace(LastName)) 
+
+            { 
+
+                Console.WriteLine("Reject empty input fields."); 
+
+            } 
+
+            else 
+
+            { 
+
+                Console.WriteLine("Your name is " + FirstName + " " + LastName); 
+
+            } 
+
+  
+
+             
+
+        } 
+
+    } 
+
+} 
